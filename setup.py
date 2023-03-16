@@ -4,7 +4,7 @@ import sys
 from setuptools import setup,find_packages
 here = os.path.abspath(os.path.dirname(__file__))
 
-with open('requirements.txt') as fh:
+with open('requirements.txt',encoding="utf-16") as fh:
     requirements = [line.strip() for line in fh.readlines()]
 
 setup(name='lvgp-pytorch',
